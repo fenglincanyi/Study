@@ -1,4 +1,4 @@
-# 使用
+# Freeline 使用
 
 ###1. 配置
 * 主 app 模块的 gradle:
@@ -40,11 +40,15 @@ public void onCreate() {
 windows: ```gradlew initFreeline -Pmirror``` 
 mac/linux: ``` ./gradlew initFreeline``` 
 稍等片刻，就会在项目中多出Freeline相关的目录
+
 ### 3. 遇到的问题
 * 编码问题
+
 ![](http://7xr1vo.com1.z0.glb.clouddn.com/tr0jan_1478500206635_45.png)
+
 **原因：**
 因为python系统使用的默认编码为ascii编码，但是代码运行中的操作的字符不属于ascii范围
+
 **解决：**
 在 android_tools.py 中 添加：
 ```
