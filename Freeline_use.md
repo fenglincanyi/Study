@@ -42,7 +42,7 @@ public void onCreate() {
 稍等片刻，就会在项目中多出Freeline相关的目录
 
 ### 3. 遇到的问题
-* 字符编码问题
+> #### 字符编码问题
 
 ![](http://7xr1vo.com1.z0.glb.clouddn.com/tr0jan_1478500206635_45.png)
 
@@ -58,7 +58,7 @@ reload(sys)
 sys.setdefaultencoding('utf-8')
 ```
 
-* 有的时候会出现一直是全量编译
+> #### 有的时候会出现一直是全量编译
 
 **原因：**
 app里的缓存在重新安装的时候没有更新
