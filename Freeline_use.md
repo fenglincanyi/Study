@@ -8,6 +8,7 @@ apply plugin: 'com.antfortune.freeline'
 android {
     ...
     
+    // 此项可选
     freeline {
         hack true
     }
@@ -18,7 +19,7 @@ android {
 dependencies {
     ...
     
-    classpath 'com.antfortune.freeline:gradle:0.8.1'
+    classpath 'com.antfortune.freeline:gradle:0.8.2'
 }
 ```
 * Application 中，初始化 Freeline:
