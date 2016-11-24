@@ -43,6 +43,14 @@ public void onCreate() {
 稍等片刻，就会在项目中多出Freeline相关的目录
 
 ### 3. 遇到的问题
+
+* 确定FreelineCore.init(this);加入到Application类中，且在onCreate()下的第一行，不要根据是否在主进程做特殊处理，否则可能导致FreelineService无法正常启动；[Freeline 0.7.0+开始，默认开启了Application替换，这条可以不用检查]
+* 确定FreelineService以及freeline相关组件是否正常merge到最终的minifest中，最终的manifest路径在${module}/build/intermediates/manifests中；
+* 确定python freeline.py -v与定义在build.gradle中的freeline的版本是否一致；
+* 确定是否刚刚执行了清空app数据的操作，freeline缓存数据在/data/data路径，清空app数据也会导致连接不上的问题（执行freeline命令时，通常会有句明显的日志反复出现：server result is -1）；
+* 确定是否开启了网络代理导致127.0.0.1被重定向？
+* 一定要先使用freeline来打全量包，再来进行增量，否则也会出现这个问题。即，freeline的全量编译与android-studio自带的RUN会存在冲突。
+
 > #### 字符编码问题
 
 ![](http://7xr1vo.com1.z0.glb.clouddn.com/tr0jan_1478500206635_45.png)
