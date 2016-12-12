@@ -22,7 +22,7 @@ android {
 dependencies {
     ...
     
-    classpath 'com.antfortune.freeline:gradle:0.8.2'
+    classpath 'com.antfortune.freeline:gradle:0.8.3'
 }
 ```
 * Application 中，初始化 Freeline:
