@@ -8,9 +8,12 @@ apply plugin: 'com.antfortune.freeline'
 android {
     ...
     
-    // 此项可选
+    
     freeline {
-        hack true
+        // hack true //可选
+        // applicationProxy false //application代理，默认开启  若app启动就闪退，class not found等错误可通过此设置改变
+    
+        // 具体配置参考：https://github.com/alibaba/freeline/wiki/Freeline-DSL-References
     }
 }
 ```
