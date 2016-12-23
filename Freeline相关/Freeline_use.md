@@ -1,6 +1,10 @@
 # Freeline 使用
 
 ###1. 配置
+
+最友好的文档：
+https://www.freelinebuild.com/docs/zh_cn/###
+
 * 主 app 模块的 gradle:
 ```
 apply plugin: 'com.antfortune.freeline'
@@ -22,7 +26,7 @@ android {
 dependencies {
     ...
     
-    classpath 'com.antfortune.freeline:gradle:0.8.3'
+    classpath 'com.antfortune.freeline:gradle:0.8.4'
 }
 ```
 * Application 中，初始化 Freeline:
