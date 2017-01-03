@@ -14,8 +14,9 @@ android {
     
     
     freeline {
-        // hack true //可选
-        // applicationProxy false //application代理，默认开启  若app启动就闪退，class not found等错误可通过此设置改变
+        // hack true //已经废弃
+        // productFlavor 'online' // 如果有多个，则选择一个设置，否则gradle 会报错提示
+        // applicationProxy false //application代理，默认开启  若app启动就闪退，class not found等错误可通过此设置改变
     
         // 具体配置参考：https://github.com/alibaba/freeline/wiki/Freeline-DSL-References
     }
