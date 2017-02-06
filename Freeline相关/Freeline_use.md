@@ -27,7 +27,7 @@ android {
 dependencies {
     ...
     
-    classpath 'com.antfortune.freeline:gradle:0.8.4'
+    classpath 'com.antfortune.freeline:gradle:0.8.5'//版本按照官网去更新最新的
 }
 ```
 * Application 中，初始化 Freeline:
