@@ -47,7 +47,8 @@ public void onCreate() {
 * 下载Freeline相关工具
 在终端 Terminal 中输入： 
  * windows: ```gradlew initFreeline -Pmirror``` 
- * mac/linux: ``` ./gradlew initFreeline``` 
+ * mac/linux: ``` ./gradlew initFreeline -Pmirror```
+ 
 稍等片刻，就会在项目中多出Freeline相关的目录
 
 ### 3. 遇到的问题
