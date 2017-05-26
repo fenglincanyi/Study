@@ -1,6 +1,6 @@
 # Freeline 使用
 
-###1. 配置
+### 1. 配置
 
 最友好的文档：
 https://www.freelinebuild.com/docs/zh_cn/###
